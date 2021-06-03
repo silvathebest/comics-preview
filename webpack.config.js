@@ -1,32 +1,26 @@
 const path = require('path');
+const HTMLWebpackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
+    context: path.resolve(__dirname, 'src'),
     mode: "development",
-    devtool: "eval-source-map",
-    entry: './src/index.js',
+    entry: './index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
+        filename: '[name].[contenthash].js',
     },
     module: {
         rules: [{
-                test: /\.m?js$/,
-                exclude: /(node_modules|bower_components)/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env']
-                    }
-                }
-            },
-            {
-                test: /\.css$/i,
-                use: ["style-loader", "css-loader"],
-            },
-            {
-                test: /\.html$/i,
-                loader: 'html-loader',
-            },
-        ]
-    }
+            test: /\.css$/i,
+            use: ["style-loader", "css-loader"],
+        }]
+    },
+    plugins: [
+        new HTMLWebpackPlugin({
+            title: 'Comics',
+            template: './index.html'
+        }),
+        new CleanWebpackPlugin()
+    ]
 };
