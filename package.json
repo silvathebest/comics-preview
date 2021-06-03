@@ -1,0 +1,21 @@
+{
+    "name": "comics-preview",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build": "webpack",
+        "dev": "webpack --watch"
+    },
+    "author": "Romanov Alexey",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.14.3",
+        "@babel/preset-env": "^7.14.4",
+        "babel-loader": "^8.2.2",
+        "css-loader": "^5.2.6",
+        "html-loader": "^2.1.2",
+        "style-loader": "^2.0.0",
+        "webpack": "^5.38.1",
+        "webpack-cli": "^4.7.0"
+    }
+}
