@@ -1,6 +1,15 @@
-.loader,
-.loader:before,
-.loader:after {
+.loader {
+    background-color: #ffffff;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+
+.loader-img,
+.loader-img:before,
+.loader-img:after {
     background: #000000;
     -webkit-animation: load1 1s infinite ease-in-out;
     animation: load1 1s infinite ease-in-out;
@@ -8,7 +17,7 @@
     height: 4em;
 }
 
-.loader {
+.loader-img {
     color: #000000;
     text-indent: -9999em;
     margin: 88px auto;
@@ -23,20 +32,20 @@
     animation-delay: -0.16s;
 }
 
-.loader:before,
-.loader:after {
+.loader-img:before,
+.loader-img:after {
     position: absolute;
     top: 0;
     content: '';
 }
 
-.loader:before {
+.loader-img:before {
     left: -1.5em;
     -webkit-animation-delay: -0.32s;
     animation-delay: -0.32s;
 }
 
-.loader:after {
+.loader-img:after {
     left: 1.5em;
 }
 

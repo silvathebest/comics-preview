@@ -17,7 +17,6 @@ body {
     height: 50px;
     color: #ffffff;
     background-color: #000000;
-    opacity: 50%;
     padding: 5px 15%;
 }
 
@@ -33,12 +32,18 @@ body {
 .header {
     display: flex;
     justify-content: space-around;
+    padding-top: 20px;
 }
 
-.comics-content_wrapper {
+.comics-content__title {
+    overflow-wrap: break-word;
+    margin: auto 0;
+    font-style: italic;
+}
+
+.comics-content-wrapper {
     font-family: 'Comic Neue', cursive;
     font-weight: bold;
-    opacity: 0;
     display: flex;
 }
 
@@ -53,8 +58,8 @@ body {
     text-align: center;
 }
 
-.comics-content__title {
-    font-style: italic;
+.comics-content__picture {
+    max-height: 700px;
 }
 
 .comics-content__transcription {
@@ -64,5 +69,15 @@ body {
 }
 
 #picture {
-    width: 100%;
+    max-width: 100%;
+    max-height: inherit;
+}
+
+@media screen and (max-width: 720px) {
+    .comics-content__title {
+        font-size: 17px;
+    }
+    .comics-content__picture {
+        max-height: auto;
+    }
 }

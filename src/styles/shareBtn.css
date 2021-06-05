@@ -1,0 +1,15 @@
+#shareBtn {
+    cursor: pointer;
+    background-color: #000000;
+    border-radius: 10%;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+@media screen and (max-width:720px) {
+    #shareBtn {
+        font-size: 12px;
+    }
+}
