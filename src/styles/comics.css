@@ -1,15 +1,68 @@
-.comics-content__transcription {
-    white-space: pre-line;
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
 }
 
-button {
-    background-color: #4CAF50;
-    /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
+body {
+    background: #232323;
+}
+
+#prevBtn,
+#nextBtn {
+    cursor: pointer;
+    position: relative;
+    top: 45%;
+    border-radius: 3px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #000000;
+    opacity: 50%;
+    padding: 5px 15%;
+}
+
+.container {
+    position: relative;
+    margin: 2% auto;
+    width: 70%;
+    border-radius: 5px;
+    background: #fff;
+    min-height: 500px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.comics-content_wrapper {
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    opacity: 0;
+    display: flex;
+}
+
+.comics-content__button {
+    width: 5%;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+}
+
+.comics-content {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.comics-content__title {
+    font-style: italic;
+}
+
+.comics-content__transcription {
+    white-space: pre-line;
+    font-weight: bold;
+    text-align: left;
+}
+
+#picture {
+    width: 100%;
 }
