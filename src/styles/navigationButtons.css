@@ -1,0 +1,29 @@
+.navigation-button {
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+    opacity: .9;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.navigation-button:hover {
+    opacity: .5;
+}
+
+.main-btn {
+    position: relative;
+    top: 45%;
+    height: 50px;
+    padding: 5px 15%;
+}
+
+.extra-btn {
+    padding: 5px;
+}
+
+@media screen and (max-width:720px) {
+    .extra-btn {
+        font-size: 12px;
+    }
+}

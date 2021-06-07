@@ -10,37 +10,38 @@
 
 <body>
     <div class="container">
+
         <div class="loader">
             <div class="loader-img">
             </div>
         </div>
 
         <div class="header">
-            <h1 class="comics-content__title" id="title"></h1>
-            <button id="shareBtn">share it!</button>
+            <h1 class="header__title" id="title"></h1>
+            <button id="shareBtn"><img src="https://img.icons8.com/android/24/000000/share.png"/></button>
         </div>
 
         <div class="comics-content-wrapper">
             <div class="comics-content__button">
-                <a id="prevBtn">&#10094</a>
+                <a class="navigation-button main-btn" id="prevBtn">&#10094</a>
             </div>
             <div class="comics-content">
-
                 <div class="comics-content__picture">
-                    <img id="picture" src="" />
+                    <img id="picture" src="">
                 </div>
-                <div class="comics-content__navigation-buttons">
-                    <a id="toFirstBtn">&#10094</a>
-
-                    <a id="randomBtn">random</a>
-
-                    <a id="toLastBtn">&#10095</a>
+                <div class="comics-content__extra-navigation-buttons">
+                    <a class="navigation-button extra-btn" id="toFirstBtn">| &#10094</a>
+                    <a class="navigation-button extra-btn" id="randomBtn">I'am lucky today</a>
+                    <a class="navigation-button extra-btn" id="toLastBtn">&#10095 |</a>
                 </div>
-                <div class="comics-content__date" id="date"></div>
-                <div class="comics-content__transcription" id="transcript"></div>
+                <div class="comics-content__date" id="date">Creation date:</div>
+                <div class="comics-content__transcription" id="transcript">Transcript</div>
             </div>
-            <div class="comics-content__button"><a id="nextBtn">&#10095</a></div>
+            <div class="comics-content__button">
+                <a class="navigation-button main-btn" id="nextBtn">&#10095</a>
+            </div>
         </div>
+
     </div>
 </body>
 
